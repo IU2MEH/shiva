@@ -8,6 +8,8 @@ It is intended to use with SDR Console or similar software for SWL/BCL ( see scr
 
 Dx cluster spots are repeated to shiva clients immediately, broadcasting stations and other lists are sent to shiva clients every 10 minutes
 
+See also "considerations" below
+
 
        -------------        -------         ---------------
       | DX cluster  | ---> | shiva | --->  | shiva clients |
@@ -35,7 +37,7 @@ where put the config file shiva.conf and edit it as follows:
 
 	timeout= timeout for tcp sockets
 
-	callsign= callsign used to present shiva to dx cluster, i prefer to use a faked one
+        callsign= callsign used to present shiva to public dx cluster, i prefer to use a faked one
 
 	dxcluster=
 	
@@ -51,7 +53,7 @@ Download an updated broadcast scheduling list from http://www.hfcc.org/data/
 
 Actual list is "A20allx2.zip - A20 Operational Schedule - Last updated on 26-May-2020"
 
-Unzip it in /etc/shiva/ (or another folder as specified in conf file as workingdir ) and rename the main list ( in our example A20all00.TXT) as LIST.list
+Unzip it in /etc/shiva/ (or another folder as you specified in conf file as workingdir ) and rename the main list ( in our example A20all00.TXT) as LIST.list
 
 You can add other custom lists naming them with suffix .list, see below for correct format.
 
@@ -96,3 +98,22 @@ QSocketNotifier: Socket notifiers cannot be enabled or disabled from another thr
 QObject::connect: Cannot queue arguments of type 'QAbstractSocket::SocketError'
 
 (Make sure 'QAbstractSocket::SocketError' is registered using qRegisterMetaType().)
+
+
+## Considerations
+
+When you configure shiva cluster in sdr console there is a field named "Display spots for: xxx minutes"
+
+you have to tune it, for example in the worst case you set it to 30 minutes:
+
+shiva send spot coming from list every 10 minutes, so , if a broadcast station stop to tx at 20:00 in the worst case disappear from the sent list at 20:10 and from sdr console waterfall at 20:40
+
+on the other hand, if a station start to tx at 19:00, in the worst case shiva will update you at 19:10
+
+so you tend to choose Display spots for: 5 minutes
+
+now in the worst case when station stop to tx at 20:00 disappear from waterfall at 20:15 not bad, and when start for example at 19:00 you will see it at 19:05
+
+but ham spots coming from the dx cluster are not always spotted every 5 mins, if you choose a short interval these can appear/disappear repeatedly
+
+It is good to use a short interval when working like an swl and a long interval when working as ham radio operator.
