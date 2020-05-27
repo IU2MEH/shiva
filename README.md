@@ -1,12 +1,12 @@
 # Shiva SWL DX Cluster
 
-##### This software connect to a dx cluster and repeat the dx spot to clients connected to it while adding spot about broadcasting stations on shortwave or anything you want.
+##### This software connect to a dx cluster and repeat the dx spot to its clients while adding spot about broadcasting stations on shortwave or anything you want to add.
 #####
 #####      -------------        -------         ---------
 #####     | DX cluster  | ---> | shiva | --->  | clients |
 #####      -------------        -------         ---------
-#####                             |
-#####                             |
+#####				  |
+#####				  |
 #####                ----------------------------
 #####               | hfcc list and custom lists |
 #####                ----------------------------
@@ -33,8 +33,11 @@
 ##### Unzip it in /etc/shiva/ and rename the main list ( in our example A20all00.TXT) as LIST.list
 ##### You can add other custom lists naming them with suffix .list
 
-### Running
+### Usage
 ##### Simply run ./Shiva as normal user.
+##### It will connect to dx cluster and listen on tcp port as specified in config file
+##### Then you can connect to it with SDR Console https://www.sdr-radio.com/ or similar software or whatever can use a "classic" dx cluster
+##### You can see here in the screenshot folder how to use it with SDR Console
 
 ## Build with
 ##### *   Qt Creator 4.12.1
@@ -46,7 +49,7 @@
 ###### * **Walter Panella IU2MEH** - *Initial work*
 
 ## Known Bugs
-
+##### ( due to my little knowledge of QT and C :) )
 ### when someone connects:
 
 ##### QObject: Cannot create children for a parent that is in a different thread.
