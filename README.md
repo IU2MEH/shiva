@@ -35,7 +35,7 @@ where put the config file shiva.conf and edit it as follows:
 
 
 
-	timeout= timeout for tcp sockets
+        timeout= timeout for tcp sockets
 
         callsign= callsign used to present shiva to public dx cluster, i prefer to use a faked one
 
@@ -118,4 +118,4 @@ now in the worst case when station stop to tx at 20:00 disappear from waterfall 
 
 but ham spots coming from the dx cluster are not always spotted every 5 mins, if you choose a short interval these can appear/disappear repeatedly
 
-It is good to use a short interval when working like an swl and a long interval when working as ham radio operator.
+It is good to use a short interval in "Display spots for: xxx minutes" when working like an swl and a long interval when working as ham radio operator.
