@@ -35,7 +35,7 @@
 ##### Simply run ./Shiva as normal user.
 ##### It will connect to dx cluster and listen on tcp port as specified in config file
 ##### Then you can connect to it with SDR Console https://www.sdr-radio.com/ or similar software or whatever can use a "classic" dx cluster
-##### You can see here in the screenshot folder how to use it with SDR Console
+##### You can see here, in the screenshots folder, how to use it with SDR Console
 
 ## Build with
 ##### *   Qt Creator 4.12.1
@@ -44,7 +44,7 @@
 
 ## Authors
 
-###### * **Walter Panella IU2MEH** - *Initial work*
+* **Walter Panella IU2MEH** - *Initial work*
 
 ## Known Bugs
 ##### ( due to my little knowledge of QT and C :) )
