@@ -102,15 +102,17 @@ QObject::connect: Cannot queue arguments of type 'QAbstractSocket::SocketError'
 
 ## Considerations
 
-When you configure shiva cluster in sdr console there is a field named "Display spots for: xxx minutes"
+When you configure shiva cluster in SDR Console there is a field named "Display spots for: xxx minutes"
 
-you have to tune it, for example in the worst case you set it to 30 minutes:
+you have to tune it!
 
-shiva send spot coming from list every 10 minutes, so , if a broadcast station stop to tx at 20:00 in the worst case disappear from the sent list at 20:10 and from sdr console waterfall at 20:40
+for example, you set it to 30 minutes:
 
-on the other hand, if a station start to tx at 19:00, in the worst case shiva will update you at 19:10
+shiva send spot coming from list every 10 minutes, so , if a broadcast station stop to tx at 20:00 in the worst case disappear from the sent list to you at 20:10 and from SDR Console waterfall at 20:40
 
-so you tend to choose Display spots for: 5 minutes
+on the other hand, if a station start to tx at 19:00, in the worst case shiva will update your waterfall at 19:10
+
+so you tend to choose "Display spots for: 5 minutes" ( or less )
 
 now in the worst case when station stop to tx at 20:00 disappear from waterfall at 20:15 not bad, and when start for example at 19:00 you will see it at 19:05
 
