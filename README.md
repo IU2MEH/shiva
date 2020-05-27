@@ -2,16 +2,14 @@
 
 ##### This software connect to a dx cluster and repeat the dx spot to its clients while adding spot about broadcasting stations on shortwave or anything you want to add.
 #####
-#####      -------------        -------         ---------
-#####     | DX cluster  | ---> | shiva | --->  | clients |
-#####      -------------        -------         ---------
-#####				  |
-#####				  |
-#####                ----------------------------
-#####               | hfcc list and custom lists |
-#####                ----------------------------
-#####
-#####
+       -------------        -------         ---------
+      | DX cluster  | ---> | shiva | --->  | clients |
+       -------------        -------         ---------
+                               |
+                               |
+                  ----------------------------
+                 | hfcc list and custom lists |
+                  ----------------------------
 ## Getting started
 ##### Download executable (compiled for linux x64).
 
