@@ -81,11 +81,11 @@ QObject: Cannot create children for a parent that is in a different thread.
 
 (Parent is QNativeSocketEngine(0x7f3f24003b70), parent's thread is Sons(0x560c9e5be3f0), current thread is QThread(0x560c9e5ba4a0)
 
-### sometimes while sending lines to clients:
+### sometimes, while sending lines to clients:
 
 QSocketNotifier: Socket notifiers cannot be enabled or disabled from another thread
 
-### sometimes when someone disconnects shiva cluster get the following error and hung:
+### sometimes, when someone disconnects, shiva cluster get the following error and crash:
 
 QObject::connect: Cannot queue arguments of type 'QAbstractSocket::SocketError'
 
