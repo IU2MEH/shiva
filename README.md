@@ -11,14 +11,14 @@ Ham radio dx cluster spots are repeated to shiva clients immediately, broadcasti
 See also "considerations" below
 
 
-   -----------------------        -------         ---------------
-  | Ham radio DX cluster  | ---> | shiva | --->  | shiva clients |
-   -----------------------        -------         ---------------
-                                     |
-                                     |
-                        ----------------------------
-                       | hfcc list and custom lists |
-                        ----------------------------
+	 -----------------------        -------         ---------------
+  	| Ham radio DX cluster  | ---> | shiva | --->  | shiva clients |
+	 -----------------------        -------         ---------------
+         	                            |
+                	                    |
+                        	 ----------------------------
+                          	| hfcc list and custom lists |
+                        	 ----------------------------
 
 
 ## Getting started
