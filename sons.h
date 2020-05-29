@@ -8,8 +8,10 @@
 #include <QDateTime>
 #include <QDate>
 #include <QTimer>
+#include <QMutex>
 
 extern QDir dir;
+extern int interval;
 
 class Sons : public QThread
 {
@@ -17,7 +19,6 @@ class Sons : public QThread
 public:
     explicit Sons(qintptr ID, QObject *parent = nullptr);
     void run();
-    QStringList station_name_list();
     bool stop;
 signals:
  //   void error(QTcpSocket::SocketError socketerror);
@@ -25,9 +26,12 @@ signals:
 public slots:
     void readyRead();
     void disconnected();
-    void write_srvside(QString);
     void read_lists();
+    void write_srvside(QString);
 private:
+    int check_user();
+    QStringList station_name_list();
+    void banner();
     QTcpSocket * socket;
     qintptr socketDescriptor;
 };

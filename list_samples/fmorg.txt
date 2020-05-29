@@ -1,0 +1,161 @@
+;         29-APR-2020  Reference Table Freq. Management Org.
+;
+;--+--------------------------------------------------+--------------------+-------------+-------------+----------------------------------------+-------------
+;Co Frequency Management Organisation                  Contact Person       Telephone     Fax           E-mail                                   Notes
+;de (Full name)
+;--+--------------------------------------------------+--------------------+-------------+-------------+----------------------------------------+-------------
+ITU ITU
+ABC Australian Broadcasting Corporation
+ABU ABU-HFC Regional Coordination Group
+ADM Abu Dhabi Media Company                            Mr. Abdul R. Awadh   +97124144922  +97124144920  aawadh@admedia.ae                        ASBU
+AGM United States Agency for Global Media (USAAGM)
+AIR All India Radio                                                                                                                              ABU-HFC
+ALL All Regional Coordination Groups
+ALR Radio Tirana, Albania                              Mr. Irfan Mandija    +3554226203   +3554223650                                            HFCC
+AMP Radiodifusion America (Asuncion, Paraguay)         Mr. Adan Mur         +59521960228  +59521963149  ramerica@rieder.net.py
+ANT ANTI, Milano, Italy                                Mr. Alfredo Cotroneo +39022666971  +390270638151 aec@nexus.org                            HFCC
+ARS Saudi Arabian Radio & Television                   Mr. Suleiman AlKalifa                                                                     ASBU
+AWR Adventist World Radio                              Mr. Claudius Dedio   +496151953151 +496151953152 dedio@awr.org                            HFCC
+BAB Babcock Communications                             Mr. Gary Stanley     +442073445781 +442073966227 opssfm@babcock.co.uk                     HFCC/ABU-HFC
+BBS Bhutan Broadcasting Service
+BCE Broadcasting Center Europe S.A.                    Mr. Eugene Muller    +352421427703 +352421427709 eugene_muller@bce.lu                     HFCC
+BFM Broadcasting Frequency Management                  Mr. Bernd Friedewald +495681930360 +495681930361 bfm@ilgradio.com or ilg@ilgradio.com     HFCC
+BRB Broadcast Belgium                                  Mr. Ludo Maes        +3233147800                 ludo.maes@broadcast.be                   HFCC
+BRC Bahrain Radio & Television Corporation                                                                                                       ASBU
+BUL Radio Bulgaria, Bulgarian Telecom.                 Mr. Anguel Nedialkov +359298524604               rbul1@nationalradio.bg                   HFCC
+CBB Caribbean Beacon                                   Mr.George McClintock +16152551300  +16152551311  george@wwcr.com
+CCK Kenya frequency spectrum manager                   Mr. W.K.Chepkwony                                wchep@hotmail.com
+CVI Christian Vision (UK)                              Mr. Andrew Flynn     +441675435502 +441675435501 andrewflynn@christianvision.com          HFCC
+DIB Maldives Radio and TV
+DIG Digita Oy                                          Mr. Esko Huuhka      +358914807287 +35891485260  esko.huuhka@digita.fi                    HFCC
+DJI Djibouti Radio                                     Mr. Massoud Yahia                                                                         ASBU
+DTK Media Broadcast GmbH (former:Deutsche Telekom)     Mr. Michael Puetz    +4922171015319+496081100785319Michael.puetz@media-broadcast.com      HFCC
+DWL Deutsche Welle                                     Mr. Thomas Feustel   +492284293226 +492284293240 Thomas.Feustel@dw.de                     HFCC/ABU-HFC
+EBA Ethiopian Broadcast agency (ETH)
+EBC Emirates Broadcasting Corporation                  Mr. Samir Iscander   +9712462514   +9712453825                                            ASBU
+EMX Radio Educacion (Mexico)
+ENC Encompass Digital Media Services		       Mr. Gary Stanley     +442073445781 None          ops.sfm.london@encompass.tv              HFCC/ABU-HFC
+ERA The Voice of Greece                                Mr. D.Angelogiannis  +3016014700   +3016012960   skalai@leon.nrcps.ariadne-t.gr           HFCC
+ERT Hellenic Broadcasting Corp. S.A.-Voice of Greece   Mr. P.Tzanelas       +306944537529 +302221031288 ptzanelas@gmail.com                      HFCC
+ERU Egypt Radio & TV Union                             Mrs.Huda Helmi       +2025789461   +2025789310   rtu@idsc.gov.eg                          ASBU
+FCC Federal Communications Commission                  Mr. Thomas Lucey     +12024182161  +12024180398  thomas.lucey@fcc.gov                     HFCC
+FEB FEBA Radio                                         Mr. R. Whittington   +441903237281 +441903205294 dwhittington@feba.org.uk                 HFCC
+FEC Far East Broadcasting Co                           Mr. Chris Cooper     +6563923154   +6563923156   freqmgr@febcintl.org                     HFCC
+FNA Federal Network Agency (Bundesnetzagentur,Germany) Mr. Dirk Otto        +493043741550 +493043741180 dirk.otto@bnetza.de                      HFCC
+FPU Free Press Unlimited (HOL)                         Mr. Rocus de Joode   +31356254300  +31356254310  info@freepressunlimited.org              HFCC
+GFC General Radio Frequency Centre                     Mr. Alexei Garkin    +74957481468  +74957480680  int@grfc.ru                              HFCC/ABU-HFC
+HCA HCJB Australia                                     Mr. Ian Williams     +61354223329  +61354221115  wilcom@netcon.net.au
+HCJ Voice of the Andes                                 Mr. Douglas Weber    +5932267098   +5932267098   dweber@hcjb.org.ec                       HFCC
+HFC ABSU/HFCC Regional Coordination Groups
+HNG National Media and Infocommunications Authority    Mr. Erno Czuprak     +3614577178   +3614577120   czuprak@nmhh.hu                          HFCC
+HRT See OIV
+IBB International Broadcasting Bureau                  Mr. Stephen Bratcher +12026191763  +12026191680  eofsched@ibb.gov                         HFCC
+ICP Instituto das Comunicacoes de Portugal
+IMN Iraqi Media Network (Iraq)
+IRB Islamic Republic of Iran Broadcast.                Mr. Mahmood Kamany   +98212163780  +98212163783  kamany@irib.com                          HFCC/ABU-HFC
+ISR Bezeq                                              Mr. Moshe Oren       +97236264562  +97236264559  mosheor@bezeq.com                        HFCC
+J   Japan
+JRT Jordan Radio and Television                        Mr. Nathir Kayali    +96264773111  +96264788115                                           ASBU
+KBS Korean Broadcasting System                         Mr. Yongwoo Lee      +8227815136   +8227815199   ywlee@mail.kbs.co.kr
+KCB Korean Central Broadcasting Station
+KRI Koode Radio International                          Mr. Usman Usman Shehu+491626997471               usman.shehu@kooderadio.com               HFCC
+LBN Lebanon Radio
+LNC Libyan National Broadcast Channel                  Mr. Abdelmula
+LNR Lao National Radio & Television
+LTU Communications Regulatory Authority                Mr. T.Barakauskas    +37052161177  +37052161564  rrt@rrt.lt
+LUX Institut Luxembourgeois de Regulation              Mr. Roland Thurmes   +35245884524  +35245884588  Roland.Thurmes@ilr.lu
+LVA Latvia Telecommunication State Inspection          Mr. Karlis Bogens    +3717333034   +3717821275   lvei@latnet.lv
+MBC Mauritius Broadcasting Corporation
+MBR Media Broadcast GmbH                               Mr. Michael Puetz    4922171015319+496081100785319Michael.puetz@media-broadcast.com       HFCC
+MCB <Kept for compatibility reasons, replaced by GFC>
+MCI Ministry of Communications&Information Techn.(INS) Mr. Hilman Fikrianto +622131409359 +622131409525 m.hilman11@ui.ac.id                      HFCC
+MCT MediaCorp Technologies Pte. Ltd. (SNG)             Mr. Andoor Ravindran +65 7938910   +65 7937651   andoor@pacific.net.sg
+MGB Malagasy Global Business S.A.(MDG)                 Ms. Flore Ravelojaona+261202242222 +261202243184 rad.ned@moov.mg                          HFCC
+MIC Ministry of Internal Affairs &Communications,Japan
+MIL Radio Mil (Mexico)
+MND MND Radio (KOR)                                    Mr. GyuCheol Kim     +8227482633   +8227482609   gckim55@naver.com 
+MOI Ministry of Information - State of Kuwait          Mr. Nasser Al-Saffar +9652421422   +9652415498   kwtfreq@ncc.moc.kw                       ASBU
+MRC Morocco Radio & TV                                 Ms. Khadija Naaman   +2127701740   +2127703208   Hamouda@RTM.gov.ma                       ASBU
+MRT Mongol Radio & Television
+MTN Mauritania Radio                                   Mr. El Hadj Diagne   +222252287    +222251264    rm@mauritania.mr
+MTR Mali Television et Radio
+MTT <Kept for compatibility reasons, replaced by MCT>
+NBA NBA of Bangladesh
+NBT NBS of Thailand                                                                                                                              ABU-HFC
+NEW Spare - for new organization
+NHK Nippon Hoso Kyokai, Japan                                                                                                                    ABU-HFC
+NPT Norwegian Post and Telecommunications Authorithy   Mr.Olav Mo Grimdalen +4722824889   +4722824891   olavmo@online.no                         HFCC
+OIV Transmitters and Communications Ltd                Mr. Slaven Božo      +38516186000  +38516186100  HFCC.OIV@oiv.hr                          HFCC
+ONT Tunisian Radio & TV                                Mr.Bechir Betteib    +2161801177   +2161781927                                            ASBU
+ORF Oesterreichischer Rundfunk                         Mr. Ernst Vranka     +431878782629 +431878782773 hfbc@orf.at                              HFCC
+ORS Austrian Broadcasting Services		            Mr. Ernst Vranka     +4318704012629+4318704012773ernst.vranka@ors.at                      HFCC
+PAL Palestine Broadcasting Corporation                 Mr. Amin Alian       +97222959893  +97222959893  Email.pbc@planet.edu                     ASBU
+PBC Pakistan Broadcasting Corporation
+PBS Philippines Broadcasting Service
+PIE Radio Piepzender                                   Mr. H.J. Gerrits     +31634388120                foxradio1@hotmail.com                    HFCC
+PNG NBC of Papua New Guinea
+POL Office of  Telecommunications  Regulation          Mr. Adam Brodziak    +48226088125  +48226088175  A.Brodziak@urt.gov.pl                    HFCC
+PTC Post and Telecommunications Corporation-Zimbabwe   Mr. Samuel Rugayo                  +2634728158
+QRC Qatar Radio & Television Corporation               Mr. Hassan ALmass    +974831443    +974831447                                             ASBU
+RAE Radiodifusion Argentina al Exterior
+RAI Radio Televisione Italiana                         Mrs. Clara Isola     +39633170721  +3963724581   Isola@rai.it                             HFCC
+RAM Radio-Agency-M                                     Mr.Anatoly Batyuskin +70951919161  +70951918591  abat@radioagency.ru                      HFCC
+RCA Radio Communications Agency Netherlands            Mr.Jaap van der Leest+31505877108  +31505877400  jaap.vdleest@at-ez.nl                    HFCC
+RCI Radio Canada International                         Mr. Gerald Theoret   +15145977619  +15142842052  gtheoret@montreal.src.ca                 HFCC
+RDP Radiodifusao Portuguesa,SA                         Mrs.Teresa Abreu     +351213820000 +351213871381 teresaabreu@rdp.pt                       HFCC
+RDR HFCC, Intl. Radio for Disaster Relief project      Mr. Sergio Salvatori +390669885258               gestfreq@vatiradio.va                    HFCC
+REE Radio Exterior de Espana                           Mr. Jose M. Huerta   +3413461276   +34913461402  plan_red.rne@rtve.es                     HFCC
+RED Red Telecom LTD                                    Mr. Daniel Robinson  +14167311266  +14163527539  d.robinson@red-telecom.com               HFCC
+RHC Radio Habana Cuba (Cuba)
+RME Radio Merkurs (Latvia)                                                  +37129224105                RNI@apollo.lv
+RMI Radio Miami International                          Mr. Jeff White       +13055599764  +18634670185  info@wrmi.net                            HFCC
+RMX Radio Mexico International (Mexico)
+RNE Radio Nepal
+RNW Radio Nederland Wereldomroep                       Mr. J.W.Drexhage     +31-356724825 +31-356724429 jan.willem.drexhage@rnw.nl               HFCC
+RNZ Radio New Zealand Ltd.
+RON Radio Onda ASBL                                    Mr. Julio Roth       +32471747293                julioroth1@yahoo.com                     HFCC
+ROU Ministry of Communications & Informatics Technol.  Mrs. Victoria Filip  +4014001575   +4014001230                                            HFCC
+RPI Radio for Peace International (Costa Rica)
+RRI Radio Republic of Indonesia                        Mr. Sunarya Ruslan   +61215732279  +62215732408  sruslan@yahoo.com                        ABU-HFC
+RRT BRT Concern                                        Mr. Nikolai Kiriliuk 380442262262  380444408722  ak@cbrt.freenet.kiev.ua                  HFCC
+RSO Radio Sultanate of Oman                            Mr. Salim Al-Nomani  +968602494    +968604629                                             ASBU
+RTA Radio Television of Afganistan
+RTB Radio Television Belgium French                    Mr. Hector De Cuyper +3227415020   +3227415567   Hector.De.Cuyper@telenet.be              HFCC
+RTC R & T of Peoples Republic of China                 Mrs. Wang Xiulan     +861066092080 +861068016436 plc2000@btamail.net.cn                   HFCC/ABU-HFC
+RTD UAE Radio & TV Dubai                                                                                                                         ASBU/ABU-HFC
+RTM Radio Television Malaysia                          Mr. Jeffrey Looi     +6038361530   +6038361227   rtmkjg@po.jaring.my                      ABU-HFC
+RVA Radio Veritas Asia                                                                                  technincal@rveritas-asia.org
+SBC Sudan National Radio Broadcasting Corporation      Mr.Saleh Alhay                                                                            ASBU
+SCR State Committee for radiofrequencies, UZB
+SDT State Supervisory Department for Telecomm.,Belarus Mr Sergey Dudarev    +375172050756 +375172050756 dudarev@belgie.by                        HFCC
+SEN ARTP - Senegalese Regulatory Authority             Mr. Bodian           +221338690369 +221338690370 mandialy.bodian@artp.sn                  HFCC
+SIM Simcom Singapore                                                                                                                             ABU-HFC
+SLB Sri Lanka Broadcasting Corporation
+SNT Sentech South Africa                               Kathy Otto           +27114714658  27114714605   ottok@sentech.co.za
+SOM Somalia Radio
+SPC SpaceLine Ltd. Bulgaria                            Mr. V. Georgiev      +359888554297 +35928685408  georgiev@spaceline.bg                    HFCC
+SRI Swiss Radio International                          Mr. Ulrich Wegmuller +41313509734  +41313509745  ulrich.wegmueller@swissinfo.ch           HFCC
+SRK Slovenske telekomunikacie,a.s. Radiokomunikacie OZ Mr. Ivan Vrzgula     +421749220532 +421749220535 ivan.vrzgula@st.sk
+SRO Slovak Radio
+SYR Syria Radio & TV Corp.                             Mr. Adnan AlMassri   +963112217653 +963112222692                                          ASBU
+TCH Czech Radio - O.Cip Consulting                     Mr. Oldrich Cip      +420222715005 +420222715005 cip@radio.cz                             HFCC
+TDA Telediffusion d'Algerie                            Ms. Amel Djenane     +21321901637  +21321901499  amel.djenane@tda.dz                      ASBU
+TDF Telediffusion de France                            Mr.Jacques Gruson    +33155951553  +33155952137  jacques.gruson@tdf.fr                    HFCC
+TER Teracom                                            Mr. Magnus Nilsson   +46-86712066  +46-86712060  mni@teracom.se                           HFCC
+TRP Transworld Radio Pacific, Guam                     Mr. George Ross      +16718288638  +16718288636  gross@guam.twr.org                       ABU-HFC
+TRT Turkish Radio-Television Corp.                     Ms. Sedef Somaltin   +903124901732 +903124901733 sedef.somaltin@trt.net.tr                HFCC/ABU-HFC
+TRW TV Radio Wave
+TWR Trans World Radio                                  Mr. Bernhard Schraut +431863120    +4318631220   101513.2330@compuserve.com               HFCC
+VAT Vatican Radio                                      Mr. Umberto Tolaini  +390669885258 +390669885062 gestfreq@vatiradio.va                    HFCC
+VOC Voz Cristiana (Chile)                              Mr. Andrew Flynn     +5628557046   +5628557053   Aflynn@interaccess.cl                    HFCC
+VOH Voice of Hope                                      Mr. Ray Robinson     +18053380075                info@voiceofhope.com                     HFCC
+VOM Voice of Myanmar
+VOR Voice of Russia                                    Mr. Anton Balashov   +74959506671  +74959506851  balashov@ruvr.ru                         HFCC
+VOV Vietnam Radio & Television
+VRT VRTN Radio Vlaanderen Int.                         Mr. Hector De Cuyper +3227415020   +3227415567   hector.decuyper@vrt.be                   HFCC
+WCB World Christian Broadcasting Corp.                 Mr. Kevin Chambers   +16153718707  +16153718791  kchambers@worldchristian.org             HFCC
+WMR World Music Radio (Denmark)                        Mr. S. H. Nielsen    +4570222222   +4570222777   wmr@wmr.dk 
+WRN World Radio Network                                Mr. Jeffrey Cohen    +442078964004 +442078969007 freqdept@wrn.org                         HFCC
+YEM Yemen Radio & TV                                   Abdulrahman Al-Haimi +9671230654   +967230761                                             ASBU
+YRT Yugoslav Radio-Television                          Mr. Momcilo Simic    +381113221850 +381113248808 momcilo.simic@itu.int                    HFCC
+ZRC Zilionis Radio TV Consulting (Lithuania)           Mr. Sigitas Zilionis +37068576840  +37052652532  consult@zilionis.lt                      HFCC

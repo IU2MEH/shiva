@@ -5,7 +5,6 @@ QString dxcluster;
 unsigned short dxclusterport;
 int timeout;
 unsigned short listenport;
-
 QTcpSocket *socket_c;
 QString line;
 
@@ -13,7 +12,7 @@ BaseListener::BaseListener(QObject *parent) :
     QTcpServer(parent)
 {
     int i=load_config();
-    if (i<6)
+    if (i<7)
       {
         qDebug()<<"Check the config file";
         exit (-1);
@@ -29,15 +28,15 @@ void BaseListener::connected()
     qDebug()<<"Connected to:"<<dxcluster<<":"<<dxclusterport;
     socket_c->write((callsign+"\r\n").toStdString().c_str());
 }
+
 void BaseListener::disconnected()
 {
     qDebug()<<"Disconnected from dxcluster";
-}
-
-void BaseListener::readyRead()
-{
-    line=socket_c->readAll();
-    emit line_received(line);
+    qDebug()<<"Reconnecting in 3 minutes...";
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()),this, SLOT(reconnect()));
+    timer->setSingleShot(true);
+    timer->start(180000);
 }
 
 void BaseListener::StartServer()
@@ -50,19 +49,35 @@ void BaseListener::StartServer()
     if (!socket_c->waitForConnected(timeout))
     {
         qDebug()<<"ERROR: "<<socket_c->errorString();
+        qDebug()<<"Reconnecting in 3 minutes...";
+        QTimer *timer = new QTimer(this);
+        connect(timer, SIGNAL(timeout()),this, SLOT(reconnect()));
+        timer->setSingleShot(true);
+        timer->start(180000);
     }
+    return;
+}
+
+void BaseListener::reconnect()
+{
+	socket_c->connectToHost(dxcluster,dxclusterport);
+	return;
 }
 
 void BaseListener::incomingConnection(qintptr socketDescriptor)
 {
-
     Sons *thread = new Sons(socketDescriptor,this);
     connect(thread,SIGNAL(finished()),thread,SLOT(deleteLater()));
     connect(this,SIGNAL(line_received(QString)),thread,SLOT(write_srvside(QString)));
+
     thread->start();
 }
 
-
+void BaseListener::readyRead()
+{
+    line=socket_c->readAll();
+    emit line_received(line);
+}
 
 int BaseListener::load_config()
 {
@@ -89,11 +104,8 @@ int BaseListener::load_config()
            { listenport=line.remove(0,QString("listenport=").length()).toUShort(); i++; }
         if (line.startsWith("workingdir="))
            { dir.setPath(line.remove(0,QString("workingdir=").length())); i++; }
+        if (line.startsWith("interval="))
+           { interval=line.remove(0,QString("interval=").length()).toInt(); i++; }
     }
     return i;
 }
-
-
-
-
-

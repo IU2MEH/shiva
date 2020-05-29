@@ -1,0 +1,196 @@
+;         19-MAR-2012 ADMIN.TXT REFERENCE TABLE
+;
+;-- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------
+;CO ADMINISTRATION ENGLISH NAME                        ADMINISTRATION FRENCH NAME                         ADMINISTRATION SPANISH NAME
+;DE
+;-- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------
+AFG Afghanistan                                        Afghanistan                                        Afganistán                                        
+AFS South Africa                                       Sudafricaine (Rép.)                                Sudafricana (Rep.)                                
+AGL Angola                                             Angola                                             Angola                                            
+ALB Albania                                            Albanie                                            Albania                                           
+ALG Algeria                                            Algérie                                            Argelia                                           
+AND Andorra                                            Andorre                                            Andorra                                           
+ARG Argentina                                          Argentine                                          Argentina                                         
+ARM Armenia                                            Arménie                                            Armenia                                           
+ARS Saudi Arabia                                       Arabie saoudite                                    Arabia Saudita                                    
+ATG Antigua and Barbuda                                Antigua-et-Barbuda                                 Antigua y Barbuda                                 
+AUS Australia                                          Australie                                          Australia                                         
+AUT Austria                                            Autriche                                           Austria                                           
+AZE Azerbaijan                                         Azerbaidjan                                        Azerbaiyan                                        
+B   Brazil                                             Brésil                                             Brasil                                            
+BAH Bahamas                                            Bahamas                                            Bahamas                                           
+BDI Burundi                                            Burundi                                            Burundi                                           
+BEL Belgium                                            Belgique                                           Bélgica                                           
+BEN Benin                                              Bénin                                              Benin                                             
+BFA Burkina Faso                                       Burkina Faso                                       Burkina Faso                                      
+BGD Bangladesh                                         Bangladesh                                         Bangladesh                                        
+BHR Bahrain                                            Bahreïn                                            Bahrein                                           
+BIH Bosnia and Herzegovina                             Bosnie-Herzégovine                                 Bosnia y Herzegovina
+BLR Belarus                                            Bélarus                                            Belarús                                           
+BLZ Belize                                             Belize                                             Belice                                            
+BOL Bolivia                                            Bolivie                                            Bolivia                                           
+BOT Botswana                                           Botswana                                           Botswana                                          
+BRB Barbados                                           Barbade                                            Barbados                                          
+BRU Brunei Darussalam                                  Brunéi Darussalam                                  Brunei Darussalam                                 
+BTN Bhutan                                             Bhoutan                                            Bhután                                            
+BUL Bulgaria                                           Bulgarie                                           Bulgaria                                          
+CAF Central African Rep.                               Centrafricaine (Rép.)                              Centroafricana (Rep.)                             
+CAN Canada                                             Canada                                             Canadá                                            
+CBG Cambodia                                           Cambodge                                           Camboya                                           
+CHL Chile                                              Chili                                              Chile                                             
+CHN China                                              Chine                                              China                                             
+CLM Colombia                                           Colombie                                           Colombia                                          
+CLN Sri Lanka                                          Sri Lanka                                          Sri Lanka                                         
+CME Cameroon                                           Cameroun                                           Camerún                                           
+COD Dem. Reb. of Congo                                 Rép. dém. du Congo                                 Rep. Dem. del Congo
+COG Congo                                              Congo                                              Congo                                             
+COM Comoros                                            Comores                                            Comoras                                           
+CPV Cape Verde                                         Cap-Vert                                           Cabo Verde                                        
+CTI Côte d'Ivoire                                      Côte d'Ivoire                                      Côte d'Ivoire                                     
+CTR Costa Rica                                         Costa Rica                                         Costa Rica                                        
+CUB Cuba                                               Cuba                                               Cuba                                              
+CVA Vatican                                            Vatican                                            Vaticano                                          
+CYP Cyprus                                             Chypre                                             Chipre                                            
+CZE Czech Republic                                     Tchèque (République)                               Checa (República)                                 
+D   Germany                                            Allemagne                                          Alemania                                          
+DJI Djibouti                                           Djibouti                                           Djibouti                                          
+DMA Dominica                                           Dominique                                          Dominica                                          
+DNK Denmark                                            Danemark                                           Dinamarca                                         
+DOM Dominican Rep.                                     Dominicaine (Rép.)                                 Dominicana (Rep.)                                 
+E   Spain                                              Espagne                                            España                                            
+EGY Egypt                                              Egypte                                             Egipto                                            
+EQA Ecuador                                            Equateur                                           Ecuador                                           
+ERI Eritrea                                            Erithrée                                           Eritrea
+EST Estonia                                            Estonie                                            Estonia                                           
+ETH Ethiopia                                           Ethiopie                                           Etiopía                                           
+F   France                                             France                                             Francia                                           
+FIN Finland                                            Finlande                                           Finlandia                                         
+FJI Fiji                                               Fidji                                              Fiji                                              
+FSM Micronesia                                         Micronésie                                         Micronesia                                        
+G   United Kingdom                                     Royaume-Uni                                        Reino Unido                                       
+GAB Gabon                                              Gabon                                              Gabón                                             
+GEO Georgia                                            Géorgie                                            Georgia                                           
+GHA Ghana                                              Ghana                                              Ghana                                             
+GMB Gambia                                             Gambie                                             Gambia                                            
+GNB Guinea-Bissau                                      Guinée-Bissau                                      Guinea-Bissau                                     
+GNE Equatorial Guinea                                  Guinée équatoriale                                 Guinea Ecuatorial                                 
+GRC Greece                                             Grèce                                              Grecia                                            
+GRD Grenada                                            Grenade                                            Granada                                           
+GTM Guatemala                                          Guatemala                                          Guatemala                                         
+GUI Guinea                                             Guinée                                             Guinea                                            
+GUY Guyana                                             Guyana                                             Guyana                                            
+HND Honduras                                           Honduras                                           Honduras                                          
+HNG Hungary                                            Hongrie                                            Hungría                                           
+HOL Netherlands                                        Pays-Bas                                           Países Bajos                                      
+HRV Croatia                                            Croatie                                            Croacia                                           
+HTI Haiti                                              Haïti                                              Haití                                             
+I   Italy                                              Italie                                             Italia                                            
+IND India                                              Inde                                               India                                             
+INS Indonesia                                          Indonésie                                          Indonesia                                         
+IRL Ireland                                            Irlande                                            Irlanda                                           
+IRN Iran (Islamic Rep. of)                             Iran (Rép. islamique d')                           Irán (Rep. Islámica del)                          
+IRQ Iraq                                               Iraq                                               Iraq                                              
+ISL Iceland                                            Islande                                            Islandia                                          
+ISR Israel                                             Israël                                             Israel                                            
+J   Japan                                              Japon                                              Japón                                             
+JMC Jamaica                                            Jamaïque                                           Jamaica                                           
+JOR Jordan                                             Jordanie                                           Jordania                                          
+KAZ Kazakhstan                                         Kazakhstan                                         Kazajstán                                         
+KEN Kenya                                              Kenya                                              Kenya                                             
+KGZ Kyrgyz Republic                                    République kirghize                                República Kirguisa
+KIR Kiribati                                           Kiribati                                           Kiribati                                          
+KOR Korea (Rep. of)                                    Corée (Rép. de)                                    Corea (Rep. de)                                   
+KRE Dem. People's Rep. of Korea                        Rép. pop. dém. de Corée                            Rep. Pop. Dem. de Corea                           
+KWT Kuwait                                             Koweït                                             Kuwait                                            
+LAO Lao P.D.R.                                         Lao (R.d.p.)                                       Lao (R.D.P.)                                      
+LBN Lebanon                                            Liban                                              Líbano                                            
+LBR Liberia                                            Libéria                                            Liberia                                           
+LBY Libya                                              Libye                                              Libia                                             
+LCA Saint Lucia                                        Sainte-Lucie                                       Santa Lucía                                       
+LIE Liechtenstein                                      Liechtenstein                                      Liechtenstein                                     
+LSO Lesotho                                            Lesotho                                            Lesotho                                           
+LTU Lithuania                                          Lituanie                                           Lituania                                          
+LUX Luxembourg                                         Luxembourg                                         Luxemburgo                                        
+LVA Latvia                                             Lettonie                                           Letonia                                           
+MAU Mauritius                                          Maurice                                            Mauricio                                          
+MCO Monaco                                             Monaco                                             Mónaco                                            
+MDA Moldava                                            Moldova                                            Moldova                                           
+MDG Madagascar                                         Madagascar                                         Madagascar                                        
+MEX Mexico                                             Mexique                                            México                                            
+MHL Marshall Islands                                   Marshall (Iles)                                    Marshall (Islas)                                  
+MKD Macedonia                                          Macédoine                                          Macedonia                                         
+MLA Malaysia                                           Malaisie                                           Malasia                                           
+MLD Maldives                                           Maldives                                           Maldivas                                          
+MLI Mali                                               Mali                                               Malí                                              
+MLT Malta                                              Malte                                              Malta                                             
+MMR Myanmar                                            Myanmar                                            Myanmar                                           
+MNG Mongolia                                           Mongolie                                           Mongolia                                          
+MOZ Mozambique                                         Mozambique                                         Mozambique                                        
+MRC Morocco                                            Maroc                                              Marruecos                                         
+MTN Mauritania                                         Mauritanie                                         Mauritania                                        
+MWI Malawi                                             Malawi                                             Malawi                                            
+NCG Nicaragua                                          Nicaragua                                          Nicaragua                                         
+NGR Niger                                              Niger                                              Níger                                             
+NIG Nigeria                                            Nigéria                                            Nigeria                                           
+NMB Namibia                                            Namibie                                            Namibia                                           
+NOR Norway                                             Norvège                                            Noruega                                           
+NPL Nepal                                              Népal                                              Nepal                                             
+NRU Nauru                                              Nauru                                              Nauru                                             
+NZL New Zealand                                        Nouvelle-Zélande                                   Nueva Zelandia                                    
+OMA Oman                                               Oman                                               Omán                                              
+PAK Pakistan                                           Pakistan                                           Pakistán                                          
+PHL Philippines                                        Philippines                                        Filipinas                                         
+PNG Papua New Guinea                                   Papouasie-Nouvelle-Guinée                          Papua Nueva Guinea                                
+PNR Panama                                             Panama                                             Panamá                                            
+POL Poland                                             Pologne                                            Polonia                                           
+POR Portugal                                           Portugal                                           Portugal                                          
+PRG Paraguay                                           Paraguay                                           Paraguay                                          
+PRU Peru                                               Pérou                                              Perú                                              
+QAT Qatar                                              Qatar                                              Qatar                                             
+ROU Romania                                            Roumanie                                           Rumania                                           
+RRW Rwanda                                             Rwanda                                             Rwanda                                            
+RUS Russia                                             Russie                                             Rusia                                             
+S   Sweden                                             Suède                                              Suecia                                            
+SDN Sudan                                              Soudan                                             Sudán                                             
+SEN Senegal                                            Sénégal                                            Senegal                                           
+SEY Seychelles                                         Seychelles                                         Seychelles                                        
+SLM Solomon                                            Salomon                                            Salomón                                           
+SLV El Salvador                                        El Salvador                                        El Salvador                                       
+SMO Western Samoa                                      Samoa-Occidental                                   Samoa Occidental                                  
+SMR San Marino                                         Saint-Marin                                        San Marino                                        
+SNG Singapore                                          Singapour                                          Singapur                                          
+SOM Somalia                                            Somalie                                            Somalia                                           
+SRB Serbia                                             Serbie                                             Serbia
+SRL Sierra Leone                                       Sierra Leone                                       Sierra Leona                                      
+SSD South Sudan                                        Soudan du Sud                                      Sudán del Sur
+STP Sao Tome and Principe                              Sao Tomé-et-Principe                               Santo Tomé y Príncipe                             
+SUI Switzerland                                        Suisse                                             Suiza                                             
+SUR Suriname                                           Suriname                                           Suriname                                          
+SVK Slovak Republic                                    République slovaque                                República Eslovaca                                
+SVN Slovenia                                           Slovénie                                           Eslovenia                                         
+SWZ Swaziland                                          Swaziland                                          Swazilandia                                       
+SYR Syria                                              Syrie                                              Siria                                             
+TCD Chad                                               Tchad                                              Chad                                              
+TGO Togo                                               Togo                                               Togo                                              
+THA Thailand                                           Thaïlande                                          Tailandia                                         
+TJK Tajikistan                                         Tadjikistan                                        Tayikistán
+TKM Turkmenistan                                       Turkménistan                                       Turkmenistán                                      
+TON Tonga                                              Tonga                                              Tonga                                             
+TRD Trinidad and Tobago                                Trinité-et-Tobago                                  Trinidad y Tabago                                 
+TUN Tunisia                                            Tunisie                                            Túnez                                             
+TUR Turkey                                             Turquie                                            Turquía                                           
+TUV Tuvalu                                             Tuvalu                                             Tuvalu                                            
+TZA Tanzania                                           Tanzanie                                           Tanzanía                                          
+UAE United Arab Emirates                               Emirats arabes unis                                Emiratos Arabes Unidos                            
+UGA Uganda                                             Ouganda                                            Uganda                                            
+UKR Ukraine                                            Ukraine                                            Ucrania                                           
+URG Uruguay                                            Uruguay                                            Uruguay                                           
+USA United States                                      Etats-Unis                                         Estados Unidos                                    
+UZB Ouzbékistan                                        Uzbekistan                                         Uzbekistán                                        
+VCT St Vincent and the Grenadines                      Saint-Vincent-et-Grenadines                        San Vicente y las Granadinas                      
+VEN Venezuela                                          Venezuela                                          Venezuela                                         
+VTN Viet Nam                                           Viet Nam                                           Viet Nam                                          
+VUT Vanuatu                                            Vanuatu                                            Vanuatu                                           
+YEM Yemen                                              Yémen                                              Yemen                                             
+ZMB Zambia                                             Zambie                                             Zambia                                            
+ZWE Zimbabwe                                           Zimbabwe                                           Zimbabwe                                          

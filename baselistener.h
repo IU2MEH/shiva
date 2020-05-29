@@ -3,6 +3,7 @@
 #include <QtNetwork/QTcpServer>
 #include <QDebug>
 #include <QFile>
+#include <QThread>
 #include "sons.h"
 
 extern QString line;
@@ -26,8 +27,10 @@ public slots:
     void connected();
     void disconnected();
     void readyRead();
+    void reconnect();
 protected:
     void incomingConnection(qintptr socketDescriptor) override;
+private:
     int load_config();
 
 };
