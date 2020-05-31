@@ -6,7 +6,7 @@ It doesn't send to ham radio dx cluster any spot nor it can receive any spot.
 
 It is intended to use with SDR Console for SWL/BCL ( see screenshots folder ) so they are able to see broadcasting stations, for example, based on scheduling day and time.
 
-Ham radio dx cluster spots are repeated to shiva clients immediately, broadcasting stations and other lists are sent to shiva clients every 10 minutes (default configurable).
+Ham radio dx cluster spots are repeated to shiva clients immediately, broadcasting stations and other lists are sent to shiva clients every 10 minutes (default,configurable).
 
 See also "considerations" below
 
@@ -27,7 +27,7 @@ If you want to access my shiva cluster already running h24, please contact me at
 
 I will give you user and password if:
 
-	- you contribute to this project improving the code ( specially for known bugs below )
+	- you contribute to this project improving the code ( specially for known bugs or todo below )
 	
 	- you contribute in another way like sending me a list or improving this doc or something like
 	
@@ -74,6 +74,12 @@ Unzip it in /etc/shiva/ (or another folder as you specified in conf file as work
 
 You can add other custom list files naming them with suffix .list, see below for the correct format.
 
+Create a user.conf file with users and passwords coma separated, for example:
+
+iu2meh,thisisthepassword
+
+
+
 ### Usage
 Simply run ./Shiva as normal user.
 
@@ -89,7 +95,7 @@ When you configure shiva cluster in SDR Console there is a field named "Display 
 
 you have to tune it!
 
-for example, you set it to 30 minutes, with shiva sending lists every 10 mins:
+for example, you set it to 30 minutes, with shiva sending lists every 10 mins (default):
 
 shiva send spot coming from list files every 10 minutes, so , if a station stop to tx at 20:00 in the worst case disappear from the sent list to you at 20:10 and from SDR Console waterfall at 20:40
 
@@ -173,3 +179,8 @@ QObject::connect: Cannot queue arguments of type 'QAbstractSocket::SocketError'
 (Make sure 'QAbstractSocket::SocketError' is registered using qRegisterMetaType().)
 
 
+## ToDo:
+
+- Connect to reverse beacon network
+
+- Don't read list files everytime for every client but read one time and store it in an array and reread if file change

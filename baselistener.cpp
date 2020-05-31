@@ -14,7 +14,7 @@ BaseListener::BaseListener(QObject *parent) :
     int i=load_config();
     if (i<7)
       {
-        qDebug()<<"Check the config file";
+        qInfo()<<"Check the config file";
         exit (-1);
       }
     socket_c = new QTcpSocket (this);
@@ -25,14 +25,14 @@ BaseListener::BaseListener(QObject *parent) :
 
 void BaseListener::connected()
 {
-    qDebug()<<"Connected to:"<<dxcluster<<":"<<dxclusterport;
+    qInfo()<<"Connected to:"<<dxcluster<<":"<<dxclusterport;
     socket_c->write((callsign+"\r\n").toStdString().c_str());
 }
 
 void BaseListener::disconnected()
 {
-    qDebug()<<"Disconnected from dxcluster";
-    qDebug()<<"Reconnecting in 3 minutes...";
+    qInfo()<<"Disconnected from dxcluster";
+    qInfo()<<"Reconnecting in 3 minutes...";
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()),this, SLOT(reconnect()));
     timer->setSingleShot(true);
@@ -43,13 +43,13 @@ void BaseListener::StartServer()
 {
     if(!this->listen(QHostAddress::Any,listenport))
     {
-        qDebug()<<"Cant start server on port"<<listenport;
+        qInfo()<<"Cant start server on port"<<listenport;
     }
     socket_c->connectToHost(dxcluster,dxclusterport);
     if (!socket_c->waitForConnected(timeout))
     {
         qDebug()<<"ERROR: "<<socket_c->errorString();
-        qDebug()<<"Reconnecting in 3 minutes...";
+        qInfo()<<"Reconnecting in 3 minutes...";
         QTimer *timer = new QTimer(this);
         connect(timer, SIGNAL(timeout()),this, SLOT(reconnect()));
         timer->setSingleShot(true);
@@ -64,6 +64,12 @@ void BaseListener::reconnect()
 	return;
 }
 
+void BaseListener::readyRead()
+{
+    line=socket_c->readAll();
+    emit line_received(line);
+}
+
 void BaseListener::incomingConnection(qintptr socketDescriptor)
 {
     Sons *thread = new Sons(socketDescriptor,this);
@@ -73,17 +79,11 @@ void BaseListener::incomingConnection(qintptr socketDescriptor)
     thread->start();
 }
 
-void BaseListener::readyRead()
-{
-    line=socket_c->readAll();
-    emit line_received(line);
-}
-
 int BaseListener::load_config()
 {
     QFile file("/etc/shiva/shiva.conf");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
-    {   qDebug()<<"Cant read config file"<<file.fileName();
+    {   qInfo()<<"Cant read config file"<<file.fileName();
         return -1;
     }
     qDebug()<<"Reading config file"<<file.fileName();

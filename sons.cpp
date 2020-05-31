@@ -30,6 +30,7 @@ void Sons::run()
     {
         banner();
         connect(this,SIGNAL(stringfound(QString)),this,SLOT(write_srvside(QString)),Qt::DirectConnection);
+
         QTimer *timer_single = new QTimer(this);
         connect(timer_single, SIGNAL(timeout()),this, SLOT(read_lists()));
         timer_single->setSingleShot(true);
@@ -54,7 +55,7 @@ void Sons::disconnected()
 
 void Sons::write_srvside(QString line)
 {
- // qDebug()<<line;
+  qDebug()<<line;
   if (socket != nullptr && socket->state() == QAbstractSocket::ConnectedState )
    {
     socket->write(line.toStdString().c_str());
@@ -76,10 +77,10 @@ void  Sons::read_lists()
             j++;
             QFile file(dir.path()+qPrintable(QString("%2").arg(list.at(i).fileName())));
             if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
-            {   qDebug()<<"Cant read file"<<dir.path()+qPrintable(QString("%2").arg(list.at(i).fileName()));
+            {   qInfo()<<"Cant read file"<<dir.path()+qPrintable(QString("%2").arg(list.at(i).fileName()));
                 return;
             }
-            qDebug()<<"reading file"<<dir.path()+qPrintable(QString("%2").arg(list.at(i).fileName()));
+            qDebug()<<"Reading file"<<dir.path()+qPrintable(QString("%2").arg(list.at(i).fileName()));
             QTextStream in(&file);
             int i=0;
             while (!in.atEnd())
@@ -189,7 +190,7 @@ void  Sons::read_lists()
         }
     }
    if (j==0)
-       qDebug()<<"No List Found";
+       qInfo()<<"No List files Found";
 }
 
 QStringList Sons::station_name_list()
@@ -198,7 +199,7 @@ QStringList Sons::station_name_list()
     QStringList station_list;
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
        {
-        qDebug()<<"Cant read broadcas.txt file";
+        qInfo()<<"Cant read broadcas.txt file";
         return {"error","999"};
        }
     QTextStream in(&file);
@@ -217,7 +218,7 @@ void Sons::banner()
     QFile file(dir.path()+"banner.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
        {
-        qDebug()<<"Cant read banner.txt file";
+        qInfo()<<"Cant read banner.txt file";
         return;
        }
     QTextStream in(&file);
@@ -244,7 +245,7 @@ int Sons::check_user()
     else
         return -1;
     user=data.trimmed();
-    qDebug()<<"User:"<<user<<"is logging in";
+    qInfo()<<"User:"<<user<<"is logging in";
 
     socket->write("Please enter password");
     socket->flush();
@@ -263,7 +264,7 @@ int Sons::check_user()
     QFile file(dir.path()+"user.conf");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
        {
-        qDebug()<<"Cant read user.conf file";
+        qInfo()<<"Cant read user.conf file";
         return -4;
        }
     QTextStream in(&file);
@@ -277,12 +278,13 @@ int Sons::check_user()
 		QString passwords=line_splitted.at(1);
 		if ( user == users && password == passwords )
 			{
+				qInfo()<<user<<" logged in.";
 				file.close();
 				return 0;
         		}
 	}
     }
-    qDebug()<<"Invalid login:"<<user;
+    qInfo()<<"Invalid login:"<<user;
     file.close();
     return -5;
 }
