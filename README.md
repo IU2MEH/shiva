@@ -81,7 +81,7 @@ iu2meh,thisisthepassword
 
 
 ### Usage
-Simply run ./Shiva as normal user.
+Simply run ./Shiva as normal user, you can pass --with-debug option to see debug messages.
 
 It will connect to ham radio dx cluster and listen on a tcp port as specified in config file
 
