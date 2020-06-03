@@ -1,6 +1,6 @@
 # Shiva DX Cluster for SWL / BCL
 
-Shiva DX Cluster connect to an ham radio dx cluster and repeat the dx spot to shiva clients while adding spot based on list files.
+Shiva DX Cluster connects to a ham radio dx cluster and repeat the dx spot to shiva clients while adding spots based on list files.
 
 It doesn't send to ham radio dx cluster any spot nor it can receive any spot.
 
