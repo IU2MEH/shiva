@@ -23,15 +23,15 @@ See also "considerations" below
 
 ## Getting started
 
-If you want to access my shiva cluster already running h24, please contact me at iu2meh@ ...
+#### If you want to access my shiva cluster already running h24, please contact me https://iu2meh.blogspot.com/
 
-I will give you user and password if:
+#### I will give you user and password if:
 
-	- you contribute to this project improving the code ( specially for known bugs or todo below )
+####	- you contribute to this project improving the code ( specially for known bugs or todo below )
 	
-	- you contribute in another way like sending me a list or improving this doc or something like
+####	- you contribute in another way like sending me a list or improving this doc or something like
 	
-	- you send me little money via paypal to help to cover my server costs
+####	- you send me little money via paypal to help to cover my server costs
 
 	
 	
@@ -77,6 +77,8 @@ You can add other custom list files naming them with suffix .list, see below for
 Create a user.conf file with users and passwords coma separated, for example:
 
 iu2meh,thisisthepassword
+
+see folder config_samples and list_samples
 
 
 
