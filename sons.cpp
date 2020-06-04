@@ -244,7 +244,7 @@ int Sons::check_user()
     }
     else
         return -1;
-    user=data.trimmed();
+    user=data.trimmed().toUpper();
     qInfo()<<"User:"<<user<<"is logging in";
 
     socket->write("Please enter password");
@@ -274,7 +274,7 @@ int Sons::check_user()
 	QStringList line_splitted=line.split(',');
 	if ( line_splitted.count() == 2 )
 	{
-		QString users=line_splitted.at(0);
+		QString users=line_splitted.at(0).toUpper();
 		QString passwords=line_splitted.at(1);
 		if ( user == users && password == passwords )
 			{
