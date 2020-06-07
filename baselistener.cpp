@@ -7,6 +7,8 @@ int timeout;
 unsigned short listenport;
 QTcpSocket *socket_c;
 QString line;
+QTimer *nodata_timer;
+
 
 BaseListener::BaseListener(QObject *parent) :
     QTcpServer(parent)
@@ -21,12 +23,18 @@ BaseListener::BaseListener(QObject *parent) :
     connect(socket_c,SIGNAL(connected()),this,SLOT(connected()));
     connect(socket_c,SIGNAL(disconnected()),this,SLOT(disconnected()));
     connect(socket_c,SIGNAL(readyRead()),this,SLOT(readyRead()));
+    nodata_timer = new QTimer(this);
+    nodata_timer->setSingleShot(true);
+    connect(nodata_timer, SIGNAL(timeout()),this, SLOT(nodata_disconn()));
 }
 
 void BaseListener::connected()
 {
+    QString data;
     qInfo()<<"Connected to:"<<dxcluster<<":"<<dxclusterport;
+    nodata_timer->start(600000);
     socket_c->write((callsign+"\r\n").toStdString().c_str());
+    qDebug()<<"logged in as:"<<callsign;
 }
 
 void BaseListener::disconnected()
@@ -64,9 +72,16 @@ void BaseListener::reconnect()
 	return;
 }
 
+void BaseListener::nodata_disconn()
+{
+    socket_c->close();
+}
+
 void BaseListener::readyRead()
 {
     line=socket_c->readAll();
+    qDebug()<<"received:"<<line.trimmed();
+    nodata_timer->start(600000);
     emit line_received(line);
 }
 

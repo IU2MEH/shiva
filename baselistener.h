@@ -28,6 +28,7 @@ public slots:
     void disconnected();
     void readyRead();
     void reconnect();
+    void nodata_disconn();
 protected:
     void incomingConnection(qintptr socketDescriptor) override;
 private:
