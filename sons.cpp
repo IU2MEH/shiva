@@ -180,7 +180,7 @@ void  Sons::read_lists()
                                             && QDateTime::currentDateTimeUtc().time()<=QDateTime::fromString(End_time,"hhmm").time()
                                              )
 	                {
-        	            emit stringfound("DX de SHIVA:     "+QString::number(Freq,'f',1)+" "+StationName.replace(" ","_")+" "+Mod+" "+QDateTime::currentDateTimeUtc().time().toString("hhmm")+"Z\r\n");
+                        emit stringfound("DX de SHIVA:     "+QString::number(Freq,'f',1)+" "+StationName.replace(" ","_")+" "+Mod+" "+QDateTime::currentDateTimeUtc().time().toString("hhmm")+"Z\r\n");
                 	}
 		}
                 i++;
@@ -225,10 +225,10 @@ void Sons::banner()
     while (!in.atEnd())
     {
         QString line = in.readLine();
-        write_srvside(line+"\r\n");
+        if (!line.startsWith("#"))
+            write_srvside(line+"\r\n");
     }
     file.close();
-
 }
 
 int Sons::check_user()
@@ -240,14 +240,17 @@ int Sons::check_user()
     QString data;
     if (socket->waitForReadyRead(10000))
     {
-        data = QString(socket->readLine());
+            data = QString(socket->readLine());
+            if (!data.front().isLetter()) //removing telnet negoziation
+                if (socket->waitForReadyRead(10000)) //removing telnet negoziation
+                    data = QString(socket->readLine()); //removing telnet negoziation
     }
     else
         return -1;
     user=data.trimmed().toUpper();
     qInfo()<<"User:"<<user<<"is logging in";
 
-    socket->write("Please enter password");
+    socket->write("Please enter password:");
     socket->flush();
     if (socket->waitForReadyRead(10000))
     {
@@ -271,18 +274,21 @@ int Sons::check_user()
     while (!in.atEnd())
     {
         QString line = in.readLine();
-	QStringList line_splitted=line.split(',');
-	if ( line_splitted.count() == 2 )
-	{
-		QString users=line_splitted.at(0).toUpper();
-		QString passwords=line_splitted.at(1);
-		if ( user == users && password == passwords )
-			{
-				qInfo()<<user<<" logged in.";
-				file.close();
-				return 0;
-        		}
-	}
+        if (!line.startsWith("#"))
+        {
+            QStringList line_splitted=line.split(',');
+            if ( line_splitted.count() == 2 )
+            {
+                QString users=line_splitted.at(0).toUpper();
+                QString passwords=line_splitted.at(1);
+                if ( user == users && password == passwords )
+                    {
+                        qInfo()<<user<<" logged in.";
+                        file.close();
+                        return 0;
+                    }
+            }
+        }
     }
     qInfo()<<"Invalid login:"<<user;
     file.close();

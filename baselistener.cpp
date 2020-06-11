@@ -96,7 +96,7 @@ void BaseListener::incomingConnection(qintptr socketDescriptor)
 
 int BaseListener::load_config()
 {
-    QFile file("/etc/shiva/shiva.conf");
+    QFile file("//etc//shiva//shiva.conf");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {   qInfo()<<"Cant read config file"<<file.fileName();
         return -1;
@@ -107,20 +107,23 @@ int BaseListener::load_config()
     while (!in.atEnd())
     {
         QString line = in.readLine();
-        if (line.startsWith("timeout="))
-           { timeout=line.remove(0,QString("timeout=").length()).toInt(); i++; }
-        if (line.startsWith("callsign="))
-           { callsign=line.remove(0,QString("callsign=").length()); i++; }
-        if (line.startsWith("dxcluster="))
-           { dxcluster=line.remove(0,QString("dxcluster=").length()); i++; }
-        if (line.startsWith("dxclusterport="))
-           { dxclusterport=line.remove(0,QString("dxclusterport=").length()).toUShort(); i++; }
-        if (line.startsWith("listenport="))
-           { listenport=line.remove(0,QString("listenport=").length()).toUShort(); i++; }
-        if (line.startsWith("workingdir="))
-           { dir.setPath(line.remove(0,QString("workingdir=").length())); i++; }
-        if (line.startsWith("interval="))
-           { interval=line.remove(0,QString("interval=").length()).toInt(); i++; }
+        if (!line.startsWith("#"))
+        {
+            if (line.startsWith("timeout="))
+               { timeout=line.remove(0,QString("timeout=").length()).toInt(); i++; }
+            if (line.startsWith("callsign="))
+               { callsign=line.remove(0,QString("callsign=").length()); i++; }
+            if (line.startsWith("dxcluster="))
+               { dxcluster=line.remove(0,QString("dxcluster=").length()); i++; }
+            if (line.startsWith("dxclusterport="))
+               { dxclusterport=line.remove(0,QString("dxclusterport=").length()).toUShort(); i++; }
+            if (line.startsWith("listenport="))
+               { listenport=line.remove(0,QString("listenport=").length()).toUShort(); i++; }
+            if (line.startsWith("workingdir="))
+               { dir.setPath(line.remove(0,QString("workingdir=").length())); i++; }
+            if (line.startsWith("interval="))
+               { interval=line.remove(0,QString("interval=").length()).toInt(); i++; }
+        }
     }
     return i;
 }
