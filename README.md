@@ -143,7 +143,13 @@ Example:
 
 28052020,31122100,1234567,0000,2359,252000,AM,Chaine 3 (AL)
 
-means:  Chaine 3 from Algeria is transmitting on 252kHz in AM 24 hours a day everyday
+means:  Chaine 3 from Algeria is transmitting on 252kHz in AM 24 hours a day everyday. (year 2100 means forever)
+
+If you want to add an yearly event you can use the following notation:
+
+17062020,1706****,1234567,0000,2359,999000,AM,test
+
+means: station "test" will transmit on 999kHz AM for 24 hours every 17th of June.
 
 I want to repeat... please SHARE your list files with this project and their users sending it to me.
 
@@ -160,19 +166,6 @@ I want to repeat... please SHARE your list files with this project and their use
 
 ## Known Bugs
 ##### ( due to my little knowledge of QT and C :) )
-### when someone connects:
-
-QObject: Cannot create children for a parent that is in a different thread.
-
-(Parent is Sons(0x560c9e5be3f0), parent's thread is QThread(0x560c9e5ba4a0), current thread is Sons(0x560c9e5be3f0)
-
-QObject: Cannot create children for a parent that is in a different thread.
-
-(Parent is QNativeSocketEngine(0x7f3f24003b70), parent's thread is Sons(0x560c9e5be3f0), current thread is QThread(0x560c9e5ba4a0)
-
-### sometimes, while sending lines to clients:
-
-QSocketNotifier: Socket notifiers cannot be enabled or disabled from another thread
 
 ### sometimes, when a shiva client disconnects, shiva cluster get the following error and crash:
 
@@ -185,4 +178,4 @@ QObject::connect: Cannot queue arguments of type 'QAbstractSocket::SocketError'
 
 - Connect to reverse beacon network
 
-- Don't read list files everytime for every client but read one time and store it in an array and reread if file change
+- Don't read list files everytime but read one time and store it in an array and reread if file change
