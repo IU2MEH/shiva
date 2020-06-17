@@ -20,19 +20,22 @@ class BaseListener : public QTcpServer
 public:
     explicit BaseListener(QObject *parent = nullptr);
     void StartServer();
+    Sons *thread;
 signals:
     void line_received(QString);
-
+    void stringfound(QString);
 public slots:
     void connected();
     void disconnected();
     void readyRead();
     void reconnect();
     void nodata_disconn();
+    void read_lists();
 protected:
     void incomingConnection(qintptr socketDescriptor) override;
 private:
     int load_config();
+    QStringList station_name_list();
 
 };
 

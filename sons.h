@@ -22,15 +22,13 @@ public:
     bool stop;
 signals:
  //   void error(QTcpSocket::SocketError socketerror);
-    void stringfound(QString);
+ //   void stringfound(QString);
 public slots:
     void readyRead();
     void disconnected();
-    void read_lists();
     void write_srvside(QString);
 private:
     int check_user();
-    QStringList station_name_list();
     void banner();
     QTcpSocket * socket;
     qintptr socketDescriptor;
