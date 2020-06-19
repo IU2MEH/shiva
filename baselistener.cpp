@@ -341,7 +341,7 @@ QStringList BaseListener::done(QNetworkReply *reply)
                 list[i].remove(0,StationName.length()+1);
                 Comment=list[i].right(list[i].length()-list[i].lastIndexOf("kHz")-4);
                 list[i].chop(Comment.length());
-                StationName="Priyom.com:_"+StationName+"_"+Comment;
+                StationName="Priyom.org:_"+StationName+"_"+Comment;
                 if (list[i].contains("kHz,"))
                 {
                     QStringList innerlist=list[i].split(",");
