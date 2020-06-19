@@ -8,7 +8,7 @@ unsigned short listenport;
 QTcpSocket *socket_c;
 QString line;
 QTimer *nodata_timer;
-
+QStringList priyom_events;
 
 BaseListener::BaseListener(QObject *parent) :
     QTcpServer(parent)
@@ -26,6 +26,15 @@ BaseListener::BaseListener(QObject *parent) :
     nodata_timer = new QTimer(this);
     nodata_timer->setSingleShot(true);
     connect(nodata_timer, SIGNAL(timeout()),this, SLOT(nodata_disconn()));
+    //download priyom calendar one shot then every 3 hours
+    get_priyom();
+    QTimer *timer_read = new QTimer(this);
+    connect(timer_read, SIGNAL(timeout()),this, SLOT(get_priyom()));
+    timer_read->start(3*60*60*1000);
+    //send priyom calendar to clients every 5 mins
+    QTimer *timer_write = new QTimer(this);
+    connect(timer_write, SIGNAL(timeout()),this, SLOT(send_priyom()));
+    timer_write->start(interval);
 }
 
 void BaseListener::connected()
@@ -97,6 +106,7 @@ void BaseListener::incomingConnection(qintptr socketDescriptor)
     connect(thread,SIGNAL(finished()),thread,SLOT(deleteLater()));
     connect(this,SIGNAL(line_received(QString)),thread,SLOT(write_srvside(QString)));
     connect(this,SIGNAL(stringfound(QString)),thread,SLOT(write_srvside(QString)));
+    connect(this,SIGNAL(pryiom_event(QString)),thread,SLOT(write_srvside(QString)));
     thread->start();
 }
 
@@ -236,7 +246,7 @@ void  BaseListener::read_lists()
             {
                 QString line = in.readLine();
                 QStringList details = line.split(',');
-        if ( details.count() == 8 )
+				if ( details.count() == 8 )
                 {
                     QString Start_date = details.at(0);
                     QString End_date = details.at(1);
@@ -290,3 +300,101 @@ QStringList BaseListener::station_name_list()
     file.close();
     return station_list;
 }
+
+void BaseListener::get_priyom()
+{
+    QNetworkAccessManager *networkManager;
+    networkManager = new QNetworkAccessManager(this);
+    // download calendar for 6 hour before and 6 hours later than now
+    QString urlStr="http://calendar.priyom.org/events?timeMin="+QDateTime::currentDateTimeUtc().addSecs(-6*60*60).toString("yyyy-MM-ddThh:mm:ss.zzzZ")+"&timeMax="+QDateTime::currentDateTimeUtc().addSecs(6*60*60).toString("yyyy-MM-ddThh:mm:ss.zzzZ");
+    QUrl url(urlStr);
+    QNetworkRequest request;
+    request.setRawHeader("Referer", "http://priyom.org/number-stations/station-schedule");
+    request.setUrl(url);
+    connect (networkManager,SIGNAL(finished(QNetworkReply*)),this, SLOT(done(QNetworkReply*)));
+    networkManager->get(request);
+}
+
+QStringList BaseListener::done(QNetworkReply *reply)
+{
+    QString StationName;
+    QString Frequency;
+    QString Comment;
+    QDateTime StartTime;
+    if (reply->error() == QNetworkReply::NoError)
+    {
+       qDebug()<<"Priyom calendar download ok";
+       priyom_events.clear();
+       QString data = QString(reply->readAll ());
+       QStringList list = data.split("summary\":\"");
+       for ( int i=0;i<list.count();i++ )
+       {
+           if (!list.at(i).contains("items"))
+           {
+                list[i].replace("\",\"start\":{\"dateTime\":\"","");
+                list[i].replace("\"}},{\"","");
+                list[i].replace("\"}}]}","");
+                StartTime=QDateTime::fromString(list[i].right(24),"yyyy-MM-ddThh:mm:ss.zzzZ");
+                StartTime.setTimeSpec(Qt::UTC);
+                list[i].chop(list[i].right(24).length());
+                StationName=list[i].section(" ", 0, 0);
+                list[i].remove(0,StationName.length()+1);
+                Comment=list[i].right(list[i].length()-list[i].lastIndexOf("kHz")-4);
+                list[i].chop(Comment.length());
+                StationName="Priyom.com:_"+StationName+"_"+Comment;
+                if (list[i].contains("kHz,"))
+                {
+                    QStringList innerlist=list[i].split(",");
+                    for (int k=0;k<innerlist.count();k++)
+                    {
+                        priyom_events.append(StartTime.toString("ddMMyyyy hh:mm:ss")+","+innerlist[k].replace("kHz",".0")+","+StationName);
+                    }
+                }
+                else
+                {
+                    priyom_events.append(StartTime.toString("ddMMyyyy hh:mm:ss")+","+list[i].replace("kHz",".0")+","+StationName);
+                }
+           }
+       }
+
+    }
+    else
+    {
+       qDebug()<<QString(reply->errorString ());
+       priyom_events.clear();
+       qInfo()<<"Priyom calendar download ERROR";
+    }
+    return priyom_events;
+}
+
+void BaseListener::send_priyom()
+{
+    int j=0;
+    for (int i=0;i<priyom_events.size();i++)
+    {
+           QStringList details=priyom_events.at(i).split(",");
+           if ( details.count() == 3 )
+           {
+                QString StartTimestr = details.at(0);
+                QDateTime StartTime = QDateTime::fromString(StartTimestr,"ddMMyyyy hh:mm:ss");
+                StartTime.setTimeSpec(Qt::UTC);
+                QDateTime EndTime=StartTime.addSecs(60*60);
+                QString Freq = details.at(1);
+                QString StationName = details.at(2);
+                if (StartTime<=QDateTime::currentDateTimeUtc()
+                    && QDateTime::currentDateTimeUtc()<=EndTime
+                     )
+                 {
+                    emit pryiom_event("DX de SHIVA:     "+Freq+" "+StationName+" - "+QDateTime::currentDateTimeUtc().time().toString("hhmm")+"Z\r\n");
+                    j++;
+                 }
+            }
+    }
+    qDebug()<<"sent"<<j<<"events out of"<<priyom_events.size()<<"from Priyom";
+}
+
+
+
+
+
+

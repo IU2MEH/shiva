@@ -1,6 +1,8 @@
 #ifndef BASELISTENER_H
 #define BASELISTENER_H
 #include <QtNetwork/QTcpServer>
+#include <QtNetwork/QNetworkReply>
+#include <QtNetwork/QNetworkAccessManager>
 #include <QDebug>
 #include <QFile>
 #include <QThread>
@@ -24,6 +26,7 @@ public:
 signals:
     void line_received(QString);
     void stringfound(QString);
+    void pryiom_event(QString);
 public slots:
     void connected();
     void disconnected();
@@ -31,6 +34,9 @@ public slots:
     void reconnect();
     void nodata_disconn();
     void read_lists();
+    QStringList done(QNetworkReply*);
+    void get_priyom();
+    void send_priyom();
 protected:
     void incomingConnection(qintptr socketDescriptor) override;
 private:
