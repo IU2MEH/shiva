@@ -14,9 +14,9 @@ Priyom.org number stations are sent for 1 hour since the start of transmission.
 
 See also "considerations" below
 
-      ---------------------          -------
-     |  Priyom.org         |------> |       |
-      ---------------------         | shiva |
+     ---------------------          -------
+    |  Priyom.org         |------> |       |
+     ---------------------         | shiva |
 	 -----------------------       |       |        ---------------
   	| Ham radio DX cluster  | ---> |       | --->  | shiva clients |
 	 -----------------------        -------         ---------------
