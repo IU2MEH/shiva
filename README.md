@@ -2,17 +2,23 @@
 
 Shiva DX Cluster connects to a ham radio dx cluster and repeat the dx spot to shiva clients while adding spots based on list files.
 
+It downloads also Priyom.org number station schedules to show them dinamically on cluster softwares.
+
 It doesn't send to ham radio dx cluster any spot nor it can receive any spot.
 
 It is intended to use with SDR Console for SWL/BCL ( see screenshots folder ) so they are able to see broadcasting stations, for example, based on scheduling day and time.
 
 Ham radio dx cluster spots are repeated to shiva clients immediately, broadcasting stations and other lists are sent to shiva clients every 10 minutes (default,configurable).
 
+Priyom.org number stations are sent for 1 hour since the start of transmission.
+
 See also "considerations" below
 
-
-	 -----------------------        -------         ---------------
-  	| Ham radio DX cluster  | ---> | shiva | --->  | shiva clients |
+         ---------------------          -------
+        |  Priyom.org         |------> |       |
+         ---------------------         | shiva |
+	 -----------------------       |       |        ---------------
+  	| Ham radio DX cluster  | ---> |       | --->  | shiva clients |
 	 -----------------------        -------         ---------------
          	                            |
                 	                    |
