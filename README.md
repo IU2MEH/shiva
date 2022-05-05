@@ -1,4 +1,6 @@
-# Shiva DX Cluster for SWL / BCL
+# [See Shiva2 , a new completely rewritten version here](https://github.com/IU2MEH/shiva2) https://github.com/IU2MEH/shiva2
+
+## Shiva DX Cluster for SWL / BCL
 
 Shiva DX Cluster connects to a ham radio dx cluster and repeat the dx spot to shiva clients while adding spots based on list files.
 
